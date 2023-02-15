@@ -16,7 +16,7 @@ import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import okhttp3.Headers
 
-private const val API_KEY = "34e61e3ddd6944220f1e09bcfb1b726d"
+private const val API_KEY = "a07e22bc18f5cb106bfe4cc1f83ad8ed"
 
 class MoviesFragment : Fragment(), OnListFragment {
 
@@ -39,7 +39,7 @@ class MoviesFragment : Fragment(), OnListFragment {
     params["api-key"] = API_KEY
 
     client[
-      "https://api.themoviedb.org/3/movie/now_playing?api_key=34e61e3ddd6944220f1e09bcfb1b726d",
+      "https://api.themoviedb.org/3/movie/now_playing?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed",
       params,
       object : JsonHttpResponseHandler()
       { //connect these callbacks to your API call
